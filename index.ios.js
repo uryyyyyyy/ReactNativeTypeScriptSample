@@ -1,10 +1,10 @@
 'use strict';
 
 import ReactNative from 'react-native';
-import HelloWorld from './dist/HelloWorld';
+import {Root} from './dist/Root';
 
 var {
     AppRegistry
 } = ReactNative;
 
-AppRegistry.registerComponent('ReactNativeTypescript', () => HelloWorld);
+AppRegistry.registerComponent('ReactNativeTypescript', () => Root);

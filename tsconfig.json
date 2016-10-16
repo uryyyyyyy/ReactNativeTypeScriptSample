@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "target": "es6",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "sourceMap": true,
     "outDir": "./dist/",
     "jsx": "react"
   },
@@ -9,5 +12,8 @@
   ],
   "exclude": [
     "node_modules"
+  ],
+  "files": [
+    "./typings/index.d.ts"
   ]
 }
