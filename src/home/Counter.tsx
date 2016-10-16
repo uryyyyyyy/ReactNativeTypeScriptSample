@@ -18,12 +18,14 @@ export class Counter extends React.Component<Props, {}> {
                 <Text>{this.props.value.num}</Text>
                 <Button
                     raised
-                    icon={{name: 'cached'}}
+                    backgroundColor="#673AB7"
+                    icon={{name: 'add'}}
                     onPress={() => this.props.actions.increment(3)}
                     title='increment 3' />
                 <Button
                     raised
-                    icon={{name: 'cached'}}
+                    backgroundColor="#673AB7"
+                    icon={{name: 'remove'}}
                     onPress={() => this.props.actions.decrement(2)}
                     title='decrement 2' />
             </View>

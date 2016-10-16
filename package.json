@@ -6,7 +6,7 @@
     "postinstall": "typings install",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "tsc": "tsc",
+    "tsc": "tsc"
   },
   "dependencies": {
     "react": "15.3.2",
