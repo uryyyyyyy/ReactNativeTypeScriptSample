@@ -1,12 +1,8 @@
 import * as React from "react";
 import {GlobalState} from "./Entities";
 import {DispatchActions} from "./DispatchActions";
-import {Text, TouchableHighlight, View} from 'react-native';
-
-// const {
-//     MKButton,
-//     MKColor,
-// } = require('react-native-material-kit');
+import {Text, View} from 'react-native';
+const {Button} = require('react-native-elements');
 
 interface Props {
     value: GlobalState;
@@ -16,22 +12,20 @@ interface Props {
 export class Counter extends React.Component<Props, {}> {
 
     render() {
-        // const ColoredRaisedButton = MKButton.coloredButton()
-        //     .withText('increment 3')
-        //     .withOnPress(() => this.props.actions.increment(3))
-        //     .build();
-        //
-        // const ColoredRaisedButton2 = MKButton.coloredButton()
-        //     .withText('decrement 2')
-        //     .withOnPress(() => this.props.actions.decrement(2))
-        //     .build();
-
         return (
             <View style={{padding: 30}}>
                 <Text>へろぅわーるど</Text>
-                <Text>Score: {this.props.value.num}</Text>
-                {/*<ColoredRaisedButton/>*/}
-                {/*<ColoredRaisedButton2/>*/}
+                <Text>{this.props.value.num}</Text>
+                <Button
+                    raised
+                    icon={{name: 'cached'}}
+                    onPress={() => this.props.actions.increment(3)}
+                    title='increment 3' />
+                <Button
+                    raised
+                    icon={{name: 'cached'}}
+                    onPress={() => this.props.actions.decrement(2)}
+                    title='decrement 2' />
             </View>
         )
     }
